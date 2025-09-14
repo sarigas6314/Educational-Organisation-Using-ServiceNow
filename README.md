@@ -2,7 +2,7 @@
 
 👥 Team Members
 
-Team Leader: SARIGASREE SANDHIYAPPAN S
+Team Leader: SARIGASREE SANDHIYAPPAN
 
 Team Member 1: DIVYA BHARATHI S
 
