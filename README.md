@@ -1,86 +1,78 @@
-🎓 Educational Organisation Using ServiceNow
-A ServiceNow-based Educational Management System that streamlines admissions, student and teacher data management, and academic progress tracking with automated workflows and clean form designs 📚⚙️.
-
+🏠 Calculating Family Expenses using ServiceNow
 👥 Team Members
-Team ID: NM2025TMID20274 🏷️.
 
-Team Leader: SARIGASREE SANDHIYAPPAN S 👩‍💼.
+Team Leader: SARIGASREE SANDHIYAPPAN S
 
-Team Member 1: MONISHA S 👤.
+Team Member 1: DIVYA BHARATHI S
 
-Team Member 2: DIVYA BHARATHI S 👤.
-
-Category: ServiceNow System Administrator 🧑‍🔧.
+Team Member 2: MONISHA S
 
 📌 Project Overview
-The Educational Management System centralizes student and teacher records, automates admission procedures, and tracks academic progress within a single ServiceNow application for real-time operational visibility 🧭. It reduces manual errors and enhances decision-making with standardized tables, process flows, number maintenance, and client-side scripts 🧩.
+
+The "Calculating Family Expenses using ServiceNow" project is designed to help families efficiently track, manage, and analyze their expenses. Leveraging the powerful ServiceNow platform, the system provides a user-friendly, scalable, and intuitive interface for real-time financial management.
+
+With this solution, families can make informed financial decisions, improve transparency in spending, and ensure long-term financial well-being.
 
 ⚡ Key Features
-Central repository for student and teacher profiles with controlled form behaviors and display fields 🗂️.
 
-Admissions workflow states: New, InProgress, Joined, Rejected, Rejoined, Closed, Cancelled 🔁.
+Expense Categorization: Organize expenses into various categories for clear insights.
 
-Student Progress tracking with computed Total, Percentage, and Result for consistent evaluation 🧮.
+Budget Management: Set monthly or yearly budgets per category.
 
-Client-side automation: pincode-based auto-fill for location fields and pass/fail logic with validation 🧑‍💻.
+Real-Time Tracking: Monitor expenses as they happen.
 
-Number Maintenance for standard Admin Number sequencing with Dynamic Default “Get Next Padded Number” 🔢.
+Detailed Reporting: Generate insightful reports and dashboards.
+
+Scalability: Supports families of different sizes and financial complexity.
+
+User-Friendly Interface: Intuitive design for effortless navigation.
 
 🛠 Skills Required
-TensorFlow for future predictive analytics and intelligent insights into academic outcomes 🔮.
+
+IoT Open Hardware Platforms: For potential integration with devices to track expenses automatically.
+
+Data Structures: Efficient management and organization of expense records.
 
 🎯 Project Goal
-Streamline admissions and academic tracking through a centralized, automated ServiceNow solution 🎯.
 
-Improve data integrity and visibility to support timely, data-driven decisions across departments 📈.
+Empower families to:
+
+Make informed and strategic financial decisions.
+
+Track spending with transparency.
+
+Achieve financial stability and well-being.
 
 💻 Technologies Used
-Platform: ServiceNow (Tables, Form Design, Local Update Sets, Process Flow, Number Maintenance, Client Scripts) 🧱.
+
+Platform: ServiceNow
+
+Programming/Scripting: JavaScript, Glide APIs
+
+Database Management: ServiceNow Tables and Records
+
+Reporting Tools: ServiceNow dashboards and reports
 
 🚀 How to Use
-Access a Personal Developer Instance from the ServiceNow Developer Site and verify navigation readiness 🧑‍💻.
 
-Create Local Update Sets (e.g., “Educational Organisation”, “Family Expenses”) and set them as Current for controlled deployment 🧪.
+Access the ServiceNow instance configured for the project.
 
-Create the “Salesforce” table, enable Extensible, set Admin Number as Display, configure Grade choices, and set Dynamic Default to “Get Next Padded Number” 🧰.
+Add family members and define their roles.
 
-Create the “Student Progress” table, add module under the Salesforce menu, and define Subjects, Marks, Grade, Remarks, Total, Percentage, Result 🧭.
+Set up expense categories and budgets.
 
-Configure Form Design for Salesforce, Admission, and Student Progress; add Admission Number to Student Progress and arrange fields clearly 🧩.
+Log expenses manually or through integrated devices.
 
-Create Number Maintenance for Admin Number sequencing to ensure consistent identifiers 🔢.
-
-Build a Process Flow for Admissions with the defined state sequence and verify transitions 🔄.
-
-Add Client Scripts: disable calculated fields onLoad, compute percentage onChange, set result with validation, and auto-populate location from pincode where applicable 🛡️.
-
-🧑‍💻 Client Script Examples
-Disable Calculated Fields (onLoad) 🧯
-
-javascript
-function onLoad() {
-  g_form.setDisabled('u_total', true);
-  g_form.setDisabled('u_percentage', true);
-  g_form.setDisabled('u_result', true);
-}
-Percentage Calculation (onChange) 📊
-
-javascript
-function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-  if (isLoading || newValue === '') { return; }
-  var Percentage = (Total / 600) * 100;
-  g_form.setValue('u_percentage', Percentage + '%');
-}
-Result Logic & Validation (onChange) ✅
-Compute pass/fail from u_percentage, handle invalid ranges by clearing u_result, and document logic for maintainability 📋.
-
-Pincode Auto-Populate (Admission) 📮
-Auto-fill u_mandal, u_city, and u_district for specific pincodes like 509358, 500081, 500079 🗺️.
+Generate reports to analyze spending patterns.
 
 🔮 Future Enhancements
-Integrate TensorFlow for predictive analytics on admissions and student performance forecasting 📈.
 
-Extend workflows for teacher lifecycle events, auditing, and richer executive dashboards 🧭.
+Integration with bank APIs for automatic expense import.
+
+Mobile app version for on-the-go tracking.
+
+AI-based suggestions for optimized budgeting.
 
 📄 License
-Add an open-source license compatible with institutional collaboration requirements
+
+This project is licensed under the MIT License.
